@@ -1,0 +1,22 @@
+package labTest2;
+import java.util.Scanner;
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int intNum = 12345;
+		int reverseNum = 0;
+		int number;
+		
+		System.out.println("Enter five integer : " + intNum);
+		
+		while (intNum != 0) {
+			number = (intNum % 10);
+			reverseNum = reverseNum * 10 + number;
+			intNum /= 10;
+		}
+		System.out.println("Reversed Number : " + reverseNum);
+
+	}
+
+}
